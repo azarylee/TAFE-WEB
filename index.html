@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Table</title>
+  
+  <meta name="author" content="Yijun">
+
+  <link rel="stylesheet" href="index.css">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+
+<body>
+
+<div id="wrapper">
+
+	<main>
+		<table id="table1">
+			<caption id="title1">Colspan and Rowspan</caption>
+			<tr>
+				<th class="table_content1">table header</th>
+				<th class="table_content1">table header</th>
+				<th class="table_content1">table header</th>
+			</tr>
+			<tr>
+				<td rowspan="3" class="table_content1">table data with rowspan</td>
+				<td class="table_content1">table data</td>
+				<td class="table_content1">table data</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="table_content1">table data with colspan</td>
+			</tr>
+			<tr>
+				<td class="table_content1">table data</td>
+				<td class="table_content1">table data</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="table_content1">table data with colspan</td>
+			</tr>
+		</table>
+
+		<table id="table2">
+			<caption id="title2">Travel Expenses</caption>
+			<tr>
+				<th class="table_content2_title">Location</th>
+				<th class="table_content2_title">Meals</th>
+				<th class="table_content2_title">Hotels</th>
+				<th class="table_content2_title">Fares</th>
+				<th class="table_content2_title">Totals</th>
+			</tr>
+			<tr>
+				<th colspan="5" class="table_content2">Queenscliff</th>
+			</tr>
+			<tr>
+				<td class="table_content2">Day 1</td>
+				<td class="table_content2">37.74</td>
+				<td class="table_content2">112.00</td>
+				<td class="table_content2">45.00</td>
+				<td class="table_content2">194.74</td>
+			</tr>
+			<tr>
+				<td class="table_content2">Day 2</td>
+				<td class="table_content2">27.28</td>
+				<td class="table_content2">112.00</td>
+				<td class="table_content2">45.00</td>
+				<td class="table_content2">184.28</td>
+			</tr>
+			<tr>
+				<td class="table_content2_subtotals">Subtotals</td>
+				<td class="table_content2_subtotals">65.02</td>
+				<td class="table_content2_subtotals">224.00</td>
+				<td class="table_content2_subtotals">90.00</td>
+				<td class="table_content2_subtotals">379.02</td>
+			</tr>
+			<tr>
+				<th colspan="5" class="table_content2">Sorrento</th>
+			</tr>
+			<tr>
+				<td class="table_content2">Day 3</td>
+				<td class="table_content2">96.25</td>
+				<td class="table_content2">109.00</td>
+				<td class="table_content2">36.00</td>
+				<td class="table_content2">214.25</td>
+			</tr>
+			<tr>
+				<td class="table_content2">Day 4</td>
+				<td class="table_content2">35.00</td>
+				<td class="table_content2">109.00</td>
+				<td class="table_content2">36.00</td>
+				<td class="table_content2">180.00</td>
+			</tr>
+			<tr>
+				<td class="table_content2_subtotals">Subtotals</td>
+				<td class="table_content2_subtotals">131.25</td>
+				<td class="table_content2_subtotals">218.00</td>
+				<td class="table_content2_subtotals">72.00</td>
+				<td class="table_content2_subtotals">421.25</td>
+			</tr>
+			<tr>
+				<td class="table_content2_total">Totals</td>
+				<td class="table_content2_total">196.27</td>
+				<td class="table_content2_total">442.00</td>
+				<td class="table_content2_total">162.00</td>
+				<td class="table_content2_total">800.27</td>
+			</tr>
+		</table>
+
+		<table id="table3">
+			<caption id="title3">Trade Wholesale Prices</caption>
+			<tr>
+				<th class="table_th_row1">Item</th>
+				<th class="table_th_row1">Threaded screws</th>
+				<th class="table_th_row1">Flat nails</th>
+				<th class="table_th_row1">Dyna-bolts</th>
+				<th class="table_th_row1">Spring washers</th>
+			</tr>
+			<tr>
+				<th class="table_th_row1">1kg</th>
+				<td class="table_td_content_row2">$2.50</td>
+				<td class="table_td_content_row2">$3.50</td>
+				<td class="table_td_content_row2">$4.50</td>
+				<td class="table_td_content_row2">$2.50</td>
+			</tr>
+			<tr>
+				<th class="table_th_row2">2kg</th>
+				<td class="table_td_content_row3">$3.00</td>
+				<td class="table_td_content_row3">$4.00</td>
+				<td class="table_td_content_row3">$5.00</td>
+				<td class="table_td_content_row3">$3.00</td>
+			</tr>
+			<tr>
+				<th class="table_th_row1">3kg</th>
+				<td class="table_td_content_row2">$3.50</td>
+				<td rowspan="2" class="table_td_content_row2">$4.50</td>
+				<td class="table_td_content_row2">$5.50</td>
+				<td rowspan="2" class="table_td_content_row2">$3.50</td>
+			</tr>
+			<tr>
+				<th class="table_th_row2">4kg</th>
+				<td class="table_td_content_row3">$4.00</td>
+				<td class="table_td_content_row3">$6.00</td>
+			</tr>
+		</table>
+	</main>
+
+
+	<footer>
+
+	</footer>
+
+
+</div>
+  
+</body>
+</html> 
