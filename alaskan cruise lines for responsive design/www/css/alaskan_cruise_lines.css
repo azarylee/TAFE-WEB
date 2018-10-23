@@ -1,0 +1,180 @@
+* {
+margin: 0em;
+padding: 0em;
+font-size: 100%;
+border-style: none;
+list-style-type: none;
+}
+
+body {
+font-family: "trebuchet MS", calibri, sans-serif;
+background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 480px){
+	#wrapper{
+		margin: 0px;
+		min-width: 320px;
+	}
+	#inner-wrapper{
+		padding: 3% 5%;
+	}
+	#responsive-menu .menu{
+		max-height: 0;
+		overflow: hidden;
+		float: none;
+		width: 100%;
+		transition: max-height 0.5s;
+	}
+	#resposive-menu .menu-icon{
+		display: inline-block;
+	}
+	nav{
+
+	}
+	nav ul{
+		flex-flow: column wrap;
+	}
+	nav li{
+		font-size: 83%;
+	}
+	main{
+
+	}
+	footer{
+		width: 100%;
+	}
+	footer ul{
+		flex-flow: column wrap;
+	}
+	footer li{
+		
+	}
+}
+
+#wrapper {  
+max-width: 700px;
+min-width: 320px;
+margin: auto;
+background-color: #fff;
+border: 1px solid #79575c; 
+} 
+
+#inner-wrapper {   
+max-width: 604px;
+margin: auto;
+}
+
+#responsive-menu .menu-icon{
+	display: none;
+	width: 100%;
+}
+
+
+#responsive-menu .menu-icon a{
+	width: 100%;
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#responsive-menu .menu-icon img{
+	vertical-align: bottom;
+}
+
+header img{
+width: 100%;
+max-width: 604px;
+height: auto;
+}
+
+nav {
+margin-top: 14px;
+font-size: 105%;
+}
+
+nav ul {
+display: flex;
+justify-content: space-between;   /*  full width spacing  */
+} 
+
+nav a {
+color: #79575c;
+text-decoration: none;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #8e2942;
+}
+
+#current-page {
+color: #8e2942;
+}
+
+main {
+display: block;
+max-width: 500px;
+margin: auto;
+margin-top: 30px;
+}
+
+h1 {
+margin-top: 25px;
+color: #4f393c;
+font-size: 20px;
+}
+
+p {
+font-size: 14px;
+margin-top: 10px;
+}
+
+main a {
+color: #c23659;
+text-decoration: none;
+}
+
+main a:hover {
+text-decoration: underline;
+}
+
+section ul {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+section img {
+border-radius: 25px;
+}
+
+footer {
+width: 360px;
+margin: 18px auto 14px auto;
+font-size: 10px;
+color: #79575c;
+}
+
+footer ul {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer a {
+color: #79575c;
+text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+
+
+
+
+

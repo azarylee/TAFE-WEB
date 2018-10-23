@@ -1,0 +1,109 @@
+
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(function() {
+  $("a[href=#menu-expand]").click(function(e) {
+      $(".menu").toggleClass("menu-open");
+      e.preventDefault();
+  });
+}); 
+</script>
+
+
+
+
+
+<div id="responsive-menu">
+<div class="menu-icon">
+<a href="#menu-expand"><img src="images/menu_icon.png" width="25" height="25" alt="Responsive Menu icon"/></a>
+</div>
+
+
+
+
+
+#responsive-menu  .menu-icon {      /* responsive MENU */
+display: none;
+width: 100%;
+}
+
+#responsive-menu  .menu-icon a {      /* responsive MENU */
+width: 100%;
+display: inline-block;
+color: #000;
+text-decoration: none;
+font-weight: bold;
+font-size: 20px;
+}
+
+#responsive-menu  .menu-icon img {      /* responsive MENU */
+vertical-align: bottom;
+}
+
+
+
+
+    @media screen and (max-width: 480px) {    /* responsive design for SMART PHONES */ 
+
+	#wrapper {
+	margin: 0px;   
+	min-width: 320px; 
+	}
+
+	#inner-wrapper {
+	padding: 3% 5%;
+	}
+
+
+	#responsive-menu  .menu {   /* responsive MENU */
+	max-height: 0;
+	overflow: hidden;
+	float: none;
+	width: 100%;
+	transition: max-height 0.5s;
+	}
+
+	#responsive-menu  .menu.menu-open {   /* responsive MENU */
+	max-height: 1000px;
+	transition: max-height 0.5s;
+	}
+
+	#responsive-menu  .menu-icon {   /* responsive MENU */
+	display: inline-block;
+	}
+
+	nav {    /*  insert a suitable top margin  */
+	
+	}
+	nav ul {
+	flex-flow: column wrap;  
+	} 
+
+	nav li {   /*  insert a suitable top margin  */
+	
+	font-size: 83%;
+	}
+
+	main {   /*  insert a suitable top margin  */
+	
+	}
+
+	footer {   /*  insert text align for center  */
+	width: 100%;
+	
+	}
+
+	footer ul {
+	flex-flow: column wrap;  
+	} 
+
+	footer li {   /*  insert a suitable top margin  */
+	
+	}
+
+
+    }    /* closes 480px break point */
+
+
+
